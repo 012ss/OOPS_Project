@@ -1,5 +1,5 @@
 module Check_vacancy
-  def Check_vacancy
+  def check_vacancy
     a = @parking_area.check_vacancy
 
     if a.size == 0

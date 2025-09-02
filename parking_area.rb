@@ -1,5 +1,5 @@
 require "json"
-
+require "time"
 class ParkingArea
     OCCUPANCY_RATE = ['L','M','H']
     def initialize

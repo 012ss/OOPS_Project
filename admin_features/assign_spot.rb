@@ -1,6 +1,7 @@
 module Assign_spot_module
   def assign_spot(id,duration)
     @parking_area.assign_spot(id,duration)
+    spot = @parking_area.get_spot_by_id(id)
     occupancy = @parking_area.check_occupancy
       price = spot[:price]
     case occupancy
@@ -11,8 +12,6 @@ module Assign_spot_module
     when "H"
       price += 200
     end
-    @available_spots.delete do |spot|
-      spot[:id] == id
-    end
+    price
   end
 end
