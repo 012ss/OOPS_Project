@@ -1,4 +1,5 @@
 [
+
 {
 "id": 1,
 "vacant": true,
@@ -224,4 +225,5 @@
 "exit_time": null,
 "duration": null
 }
+
 ]
