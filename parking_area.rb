@@ -22,7 +22,7 @@ class ParkingArea
         @spots.count {|s| s[:type] == 2}
     end
 
-    def check_vacany
+    def check_vacancy
         @spots.select {|s| s[:vacant]== true}   # array of vacant spots
     end
 
@@ -38,12 +38,12 @@ class ParkingArea
     end
 
     def assign_spot(user)
-        spot_id = user[:spot_id]
+        spot_id = user[:id]
         spot = @spots.find {|s| s[:id]== spot_id}
         return "Spot not found" unless spot 
 
         spot[:vacant] = false
-        spot[:arriving_at] = Time.now.to_s
+        spot[:arriving_time] = Time.now.to_s
     end
 
     def check_occupancy
@@ -59,7 +59,8 @@ class ParkingArea
         end
     end
 
-    def release_spot(spot_id)
+    def release_spot(user)
+        spot_id = user[:id]
         spot = @spots.find{ |s| s[:id] == spot_id}
         return "Spot not found" unless spot
         return "Spot #{spot_id} is already vacant..." if spot[:vacant]
@@ -69,11 +70,11 @@ class ParkingArea
     end
 end
 
-a = ParkingArea.new
-p a.total_spots
-p a.total_by_type
-p a.two_wheeler_spots
-p a.four_wheeler_spots
-p a.check_vacany
-p a.details_spot
-p a.check_occupancy
+# a = ParkingArea.new
+# p a.total_spots
+# p a.total_by_type
+# p a.two_wheeler_spots
+# p a.four_wheeler_spots
+# p a.check_vacany
+# p a.details_spot
+# p a.check_occupancy
