@@ -1,22 +1,52 @@
-[
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[
 {
 "id": 1,
 "vacant": true,
 "close_to_exit": 2,
 "price": 196,
-"arriving_time": 1756858020942,
-"exit_time": 1756859587123,
-"duration": 1566181
+"arriving_time": null,
+"exit_time": null,
+"duration": null
 },
 {
 "id": 2,
-"vacant": false,
+"vacant": true,
 "close_to_exit": 4,
 "price": 100,
-"arriving_time": 1756859663456,
-"exit_time": 1756860341772,
-"duration": 678316
+"arriving_time": null,
+"exit_time": null,
+"duration": null
 },
 {
 "id": 3,
@@ -29,21 +59,21 @@
 },
 {
 "id": 4,
-"vacant": false,
+"vacant": true,
 "close_to_exit": 1,
 "price": 274,
-"arriving_time": 1756858102384,
-"exit_time": 1756859345688,
-"duration": 1243304
+"arriving_time": null,
+"exit_time": null,
+"duration": null
 },
 {
 "id": 5,
-"vacant": false,
+"vacant": true,
 "close_to_exit": 4,
 "price": 100,
-"arriving_time": 1756858712211,
-"exit_time": 1756859451009,
-"duration": 738798
+"arriving_time": null,
+"exit_time": null,
+"duration": null
 },
 {
 "id": 6,
@@ -59,13 +89,13 @@
 "vacant": true,
 "close_to_exit": 2,
 "price": 196,
-"arriving_time": 1756859621375,
-"exit_time": 1756860555981,
-"duration": 934606
+"arriving_time": null,
+"exit_time": null,
+"duration": null
 },
 {
 "id": 8,
-"vacant": false,
+"vacant": true,
 "close_to_exit": 3,
 "price": 140,
 "arriving_time": null,
@@ -83,25 +113,25 @@
 },
 {
 "id": 10,
-"vacant": false,
+"vacant": true,
 "close_to_exit": 4,
 "price": 100,
-"arriving_time": 1756859423605,
-"exit_time": 1756860368199,
-"duration": 944594
+"arriving_time": null,
+"exit_time": null,
+"duration": null
 },
 {
 "id": 11,
 "vacant": true,
 "close_to_exit": 1,
 "price": 274,
-"arriving_time": 1756858543781,
-"exit_time": 1756859428570,
-"duration": 884789
+"arriving_time": null,
+"exit_time": null,
+"duration": null
 },
 {
 "id": 12,
-"vacant": false,
+"vacant": true,
 "close_to_exit": 2,
 "price": 196,
 "arriving_time": null,
@@ -110,12 +140,12 @@
 },
 {
 "id": 13,
-"vacant": false,
+"vacant": true,
 "close_to_exit": 3,
 "price": 140,
-"arriving_time": 1756858223049,
-"exit_time": 1756858902555,
-"duration": 679506
+"arriving_time": null,
+"exit_time": null,
+"duration": null
 },
 {
 "id": 14,
@@ -131,13 +161,13 @@
 "vacant": true,
 "close_to_exit": 4,
 "price": 100,
-"arriving_time": 1756858227694,
-"exit_time": 1756859535035,
-"duration": 1307341
+"arriving_time": null,
+"exit_time": null,
+"duration": null
 },
 {
 "id": 16,
-"vacant": false,
+"vacant": true,
 "close_to_exit": 2,
 "price": 196,
 "arriving_time": null,
@@ -146,21 +176,21 @@
 },
 {
 "id": 17,
-"vacant": false,
+"vacant": true,
 "close_to_exit": 1,
 "price": 274,
-"arriving_time": 1756858482613,
-"exit_time": 1756859341490,
-"duration": 858877
+"arriving_time": null,
+"exit_time": null,
+"duration": null
 },
 {
 "id": 18,
 "vacant": true,
 "close_to_exit": 2,
 "price": 196,
-"arriving_time": 1756859012873,
-"exit_time": 1756860010972,
-"duration": 998099
+"arriving_time": null,
+"exit_time": null,
+"duration": null
 },
 {
 "id": 19,
@@ -173,12 +203,12 @@
 },
 {
 "id": 20,
-"vacant": false,
+"vacant": true,
 "close_to_exit": 1,
 "price": 274,
-"arriving_time": 1756858342795,
-"exit_time": 1756859573887,
-"duration": 1231092
+"arriving_time": null,
+"exit_time": null,
+"duration": null
 },
 {
 "id": 21,
@@ -194,13 +224,13 @@
 "vacant": true,
 "close_to_exit": 3,
 "price": 140,
-"arriving_time": 1756858862990,
-"exit_time": 1756860058863,
-"duration": 1195873
+"arriving_time": null,
+"exit_time": null,
+"duration": null
 },
 {
 "id": 23,
-"vacant": false,
+"vacant": true,
 "close_to_exit": 4,
 "price": 100,
 "arriving_time": null,
@@ -212,18 +242,17 @@
 "vacant": true,
 "close_to_exit": 1,
 "price": 274,
-"arriving_time": 1756858362624,
-"exit_time": 1756859530419,
-"duration": 1167795
+"arriving_time": null,
+"exit_time": null,
+"duration": null
 },
 {
 "id": 25,
-"vacant": false,
+"vacant": true,
 "close_to_exit": 2,
 "price": 196,
 "arriving_time": null,
 "exit_time": null,
 "duration": null
 }
-
 ]
