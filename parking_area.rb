@@ -65,6 +65,7 @@ class ParkingArea
     end
 
     def set_exit_time(spot_id)
+        spot = @spots.find {|s| s[:id]== spot_id}
         spot[:exit_time] = Time.now.iso8601
     end
 
