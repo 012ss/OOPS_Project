@@ -32,18 +32,23 @@ class ParkingArea
                 id: s[:id],
                 type: s[:type],
                 vacant: s[:vacant],
-                close_exit: s[:close_exit]
+                close_to_exit: s[:close_exit]
             }
         end
     end
 
-    def assign_spot(user)
-        spot_id = user[:id]
+    def get_spot_by_id(spot_id)
+        spot = @spots.find {|s| s[:id] == spot_id}
+        return spot
+    end
+
+    def assign_spot(spot_id,duration)
         spot = @spots.find {|s| s[:id]== spot_id}
         return "Spot not found" unless spot 
 
         spot[:vacant] = false
-        spot[:arriving_time] = Time.now.to_s
+        spot[:duration] = duration
+        spot[:arriving_time] = Time.now.iso8601
     end
 
     def check_occupancy
@@ -59,22 +64,25 @@ class ParkingArea
         end
     end
 
-    def release_spot(user)
-        spot_id = user[:id]
+    def release_spot(spot_id)
         spot = @spots.find{ |s| s[:id] == spot_id}
         return "Spot not found" unless spot
         return "Spot #{spot_id} is already vacant..." if spot[:vacant]
 
         spot[:vacant] = true
-        spot[:exit_at] = Time.now.to_s
+        spot[:exit_time] = Time.now.iso8601
+    end
+
+    def real_time_spots
+        puts "\nParking Lot Status:\n\n"
+        @spots.each_slice(5) do |row|
+            row.each do |s|
+                print s[:vacant] ? "[ ] " : "[X] "
+            end
+            puts ""
+        end
+        puts "\n"
     end
 end
 
-# a = ParkingArea.new
-# p a.total_spots
-# p a.total_by_type
-# p a.two_wheeler_spots
-# p a.four_wheeler_spots
-# p a.check_vacany
-# p a.details_spot
-# p a.check_occupancy
+
