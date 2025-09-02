@@ -1,13 +1,13 @@
 [
     {
-        "vacent": false,
+        "vacant": false,
         "type": 1,
         "close_exit": 2,
         "arriving_at": 10,
         "exit_at": 11
     },
     {
-        "vacent": false,
+        "vacant": false,
         "type": 1,
         "close_exit": 2,
         "arriving_at": null,
