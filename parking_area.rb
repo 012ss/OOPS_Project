@@ -43,7 +43,7 @@ class ParkingArea
         return "Spot not found" unless spot 
 
         spot[:vacant] = false
-        spot[:arriving_at] = Time.now.to_s
+        spot[:arriving_time] = Time.now.to_s
     end
 
     def check_occupancy
