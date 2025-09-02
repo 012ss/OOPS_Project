@@ -1,3 +1,6 @@
+require_relative "parking_spot_features/parking_price"
+require_relative "parking_spot_features/check_details"
+
 class Parking_spot
   include PARKING_PRICE
   attr_accessor :vacant,:close_to_exit,:price,:arriving_time,:exit_time,:duration
