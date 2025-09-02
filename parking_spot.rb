@@ -19,7 +19,7 @@ class Parking_spot
       raise ArgumentError, "Invalid time provided"
     end
 
-    @duration=@exit_time-@arriving_time
+    @duration=((@exit_time-@arriving_time)/3600.0).round(2)
 
   end  
 end
