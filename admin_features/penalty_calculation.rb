@@ -1,12 +1,11 @@
 module Penalty_calculation_moudle
   def check_for_penalty(id)
       penalty = "There is no Penalty"
-      spot = get_spot_by_id(id)
       @parking_area.set_exit_time(id)
-
+      spot = @parking_area.get_spot_by_id(id)
       requested_duration = spot[:duration]
 
-      actual_duration = spot[:exit_time] - spot[:arriving_time]
+      actual_duration = spot[:exit_time].to_i - spot[:arriving_time].to_i
 
       real_price = spot[:price]
       
