@@ -1,7 +1,6 @@
+
 module Release_spot_module
-  def release
-    @parking_area.release_spot(@current_vacancy[0])
-    
-    puts ""
+  def release(id)
+    @parking_area.release_spot(id)
   end
 end

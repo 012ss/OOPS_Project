@@ -1,11 +1,15 @@
 module Penalty_calculation_moudle
-  def penalty(spot,relasesd_at)
-    requested_duration = spot.duration
-    extra_duration = relasesd_at - spot.arriving_time
-    final_penalty = 0
-    if requested_duration < actual_duration
-      extra_duration*(spot.price + 50)
-    end
-    final_penalty
+  def check_for_penalty(id)
+      penalty = "There is no Penalty"
+      spot = get_spot_by_id(id)
+      requested_duration = spot[:duration]
+      actual_duration = spot[:exit_time] - spot[:arriving_time]
+      real_price = spot[:price]
+      if requested_duration < actual_duration
+        # there is a fine
+        penalty_time = actual_duration - requested_duration
+        penalty = penalty_time*(real_price + 100)
+      end
+      penalty
   end
 end
