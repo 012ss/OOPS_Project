@@ -64,13 +64,19 @@ class ParkingArea
         end
     end
 
+    def set_exit_time(spot_id)
+        spot[:exit_time] = Time.now.iso8601
+    end
+
     def release_spot(spot_id)
         spot = @spots.find{ |s| s[:id] == spot_id}
         return "Spot not found" unless spot
         return "Spot #{spot_id} is already vacant..." if spot[:vacant]
 
         spot[:vacant] = true
-        spot[:exit_time] = Time.now.iso8601
+        spot[:arriving_time] = nil
+        spot[:exit_time] = nil
+        spot[:duration] = nil
     end
 
     def real_time_spots
